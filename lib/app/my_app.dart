@@ -1,3 +1,4 @@
+import 'package:cat_app/core/functions/get_theme.dart';
 import 'package:cat_app/core/routes/app_router.dart';
 import 'package:flutter/material.dart';
 
@@ -9,6 +10,7 @@ class CatApp extends StatelessWidget {
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       routerConfig: AppRouter.router,
+      theme: getTheme(),
     );
   }
 }

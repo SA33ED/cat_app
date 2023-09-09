@@ -1,3 +1,4 @@
+import 'package:cat_app/core/functions/get_app_bar.dart';
 import 'package:flutter/material.dart';
 
 class CatsView extends StatelessWidget {
@@ -5,6 +6,11 @@ class CatsView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return DefaultTabController(
+      length: 1,
+      child: Scaffold(
+        appBar: getAppBar(),
+      ),
+    );
   }
 }
