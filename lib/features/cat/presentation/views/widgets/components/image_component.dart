@@ -11,7 +11,7 @@ class ImageComponent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Tooltip(
-      message: "${cat.id}",
+      message: cat.id,
       child: ClipRRect(
         borderRadius: const BorderRadius.all(
           Radius.circular(15),

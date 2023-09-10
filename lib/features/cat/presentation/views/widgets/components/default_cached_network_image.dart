@@ -3,22 +3,20 @@ import 'package:flutter/material.dart';
 import 'package:shimmer/shimmer.dart';
 
 class DefaultCachedNetworkImage extends StatelessWidget {
+  final String imageUrl;
   final double? height;
   final double? width;
-  final double? iconSize;
   final double? padding;
-  final String imageUrl;
   final BoxFit? fit;
 
-  const DefaultCachedNetworkImage(
-      {Key? key,
-      this.height,
-      required this.imageUrl,
-      this.width,
-      required this.fit,
-      this.iconSize,
-      this.padding})
-      : super(key: key);
+  const DefaultCachedNetworkImage({
+    Key? key,
+    this.height,
+    required this.imageUrl,
+    this.width,
+    required this.fit,
+    this.padding,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
