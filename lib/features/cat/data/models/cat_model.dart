@@ -2,15 +2,14 @@ import 'package:cat_app/core/database/api/end_points.dart';
 
 class CatModel {
   CatModel({
-    required id,
-    required url,
+    required this.id,
+    required this.url,
     required width,
     required height,
   });
-  late String id;
-  late String url;
-  late num width;
-  late num height;
+  String id;
+  String url;
+
   factory CatModel.fromJson(Map<String, dynamic> jsonData) {
     return CatModel(
       id: jsonData[ApiKeys.id],

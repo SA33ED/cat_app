@@ -1,5 +1,3 @@
-import 'dart:convert';
-
 import 'package:cat_app/core/database/api/api_consumer.dart';
 import 'package:cat_app/core/database/api/end_points.dart';
 import 'package:cat_app/core/error/failure.dart';
@@ -23,7 +21,7 @@ class DioConsumer extends ApiConsumer {
           headers: headers,
         ),
       );
-      return jsonDecode(response.data.toString());
+      return response.data;
     } on DioException catch (error) {
       return ServerFailure.fromDioException(error);
     }
