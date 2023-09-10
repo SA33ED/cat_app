@@ -22,7 +22,7 @@ class CatCubit extends Cubit<CatState> {
         print(cats);
       });
     } catch (e) {
-      print("dfjdfjkvnksdjfvkjdsfnvkjfdsnvsdfjvsdfv ${e.toString()}");
+      print(e.toString());
     }
   }
 }

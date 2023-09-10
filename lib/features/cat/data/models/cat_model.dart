@@ -7,7 +7,7 @@ class CatModel {
     required width,
     required height,
   });
-  late int id;
+  late String id;
   late String url;
   late num width;
   late num height;
